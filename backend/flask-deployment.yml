@@ -1,0 +1,43 @@
+#This file contain Deployment + Sevice file also avilable in it
+
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: flask-backend
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: flask-backend
+  template:
+    metadata:
+      labels:
+        app: flask-backend
+    spec:
+      containers:
+        - name: flask-backend
+          image: sanketnalage/backend:latest
+          env:
+            - name: POSTGRES_DB
+              value: "todolist"
+            - name: POSTGRES_USER
+              value: "youruser"
+            - name: POSTGRES_PASSWORD
+              value: "yourpassword"
+            - name: POSTGRES_HOST
+              value: "postgres"  # Correct service name
+          ports:
+            - containerPort: 5000
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: flask-backend
+spec:
+  type: NodePort
+  ports:
+    - port: 5000
+      targetPort: 5000
+      nodePort: 30000  # Explicitly define the NodePort
+  selector:
+    app: flask-backend
