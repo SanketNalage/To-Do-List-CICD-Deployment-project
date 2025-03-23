@@ -70,7 +70,6 @@ cd todo-app
 ```
 
 ---
-
 ## 🚀 CI/CD Pipeline with Jenkins
 ### Jenkins Setup
 ***Install Jenkins on your server or local machine.***
@@ -80,6 +79,7 @@ Kubernetes
 Git
 SonarQube Scanner
 
+---
 ### **Read the Jenkinsfile in Backend and Frontend**
 
 📌 **Backend Jenkinsfile** → Backend CI/CD Pipeline  
