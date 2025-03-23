@@ -111,7 +111,8 @@ ArgoCD is integrated into this project to manage the deployment of the **To-Do L
 
 📌 **ARGOCD:**  
 <img src="./image/argocd.png" alt="argocd" width="500" height="300">
-
+<br>
+<img src="./image/argocd2.png" alt="argocd" width="500" height="300">
 
 
 
