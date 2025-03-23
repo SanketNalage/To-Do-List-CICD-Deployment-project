@@ -148,8 +148,6 @@ kubectl apply -f frontend-deployment.yml
 ```
 
 ---
-
----
 ## Enter in the postgersql database and create the table run the command single order.
 ```sh
 kubectl exec -it postgres-0 -- bash
