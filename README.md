@@ -80,11 +80,13 @@ Kubernetes
 Git
 SonarQube Scanner
 
-### Read the jenkinsfile in backend and frontend:
-📌 backend/JenkinsFile -> Backend file
-<img src="./image/backend-jenkins.png" alt="CI/CD Project" width="500" height="300">
-📌 frontend/JenkinsFile -> Frontend File
-<img src="./image/frontend-jenkins.png" alt="CI/CD Project" width="500" height="300">
+### **Read the Jenkinsfile in Backend and Frontend**
+
+📌 **Backend Jenkinsfile** → Backend CI/CD Pipeline  
+<img src="./image/backend-jenkins.png" alt="Backend CI/CD Pipeline" width="500" height="300">
+
+📌 **Frontend Jenkinsfile** → Frontend CI/CD Pipeline  
+<img src="./image/frontend-jenkins.png" alt="Frontend CI/CD Pipeline" width="500" height="300">
 ---
 
 
