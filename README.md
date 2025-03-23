@@ -80,6 +80,7 @@ Git
 SonarQube Scanner
 
 ---
+
 ### **Read the Jenkinsfile in Backend and Frontend**
 
 📌 **Backend Jenkinsfile** → Backend CI/CD Pipeline  
@@ -88,6 +89,29 @@ SonarQube Scanner
 📌 **Frontend Jenkinsfile** → Frontend CI/CD Pipeline  
 <img src="./image/frontend-jenkins.png" alt="Frontend CI/CD Pipeline" width="500" height="300">
 ---
+
+## 🚀 **Orchestration with ArgoCD**
+
+ArgoCD is a **declarative, GitOps continuous delivery tool** for Kubernetes. It automates the deployment of applications by syncing the desired state defined in Git repositories with the live state in your Kubernetes cluster. With ArgoCD, you can:
+
+- **Automate Deployments**: Ensure your applications are always in the desired state.
+- **Version Control**: Track changes to your Kubernetes manifests in Git.
+- **Rollback**: Easily revert to a previous state if something goes wrong.
+- **Visualization**: Monitor and manage your deployments via the ArgoCD UI.
+
+ArgoCD is integrated into this project to manage the deployment of the **To-Do List Application** seamlessly.
+
+---
+
+### **How to Use ArgoCD**
+1. Install ArgoCD in your Kubernetes cluster.
+2. Define your application manifests in a Git repository.
+3. Create an ArgoCD application to sync the Git repository with your cluster.
+4. Monitor and manage deployments via the ArgoCD UI or CLI.
+
+📌 **ARGOCD:**  
+<img src="./image/argocd.png" alt="argocd" width="500" height="300">
+
 
 
 
