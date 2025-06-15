@@ -1,7 +1,5 @@
 pipeline {
-    agent {
-        label 'sanket' // Use the agent with the label 'sanket'
-    }
+    agent any
 
     environment {
         DOCKER_IMAGE = 'sanketnalage/backend' // Docker image name
@@ -14,7 +12,7 @@ pipeline {
         stage('Clone Repository') {
             steps {
                 deleteDir() // Clean the workspace
-                git branch: 'backend', url: 'https://github.com/tejasgund02/Todo-List-Project.git'
+                git branch: 'backend', url: 'https://github.com/SanketNalage/To-Do-List-CICD-Deployment-project'
                 echo 'Clone successful'
             }
         }
